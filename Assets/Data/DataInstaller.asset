@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2a5b1a8a5b35b46ba8c090dd423e11, type: 3}
+  m_Name: DataInstaller
+  m_EditorClassIdentifier: 
+  playerSettings:
+    startCoins: 15
+    healthCastle: 5
+  enemys:
+  - alienImage: {fileID: 21300000, guid: 19027ad6aa4f9d340b0caeb926a00d9f, type: 3}
+    imageShip: {fileID: 21300000, guid: 5532561ff89123441a29e244904a5be3, type: 3}
+    health: 4
+    damageCastle: 1
+    speedMovement: 2
+    leftBorderReward: 2
+    rightBorderReward: 3
+  - alienImage: {fileID: 21300000, guid: ca0fefca24d5078429abc3d2cbab2cf6, type: 3}
+    imageShip: {fileID: 21300000, guid: 8686c3109be52054ca3e775db5e4bb01, type: 3}
+    health: 10
+    damageCastle: 2
+    speedMovement: 2
+    leftBorderReward: 5
+    rightBorderReward: 8
+  - alienImage: {fileID: 21300000, guid: 1f31c2bf5dad87a4f8c48a8f6b1a1999, type: 3}
+    imageShip: {fileID: 21300000, guid: 72890f45d9c228e4d81c2a5ae09d0a40, type: 3}
+    health: 6
+    damageCastle: 3
+    speedMovement: 4
+    leftBorderReward: 10
+    rightBorderReward: 15
+  - alienImage: {fileID: 21300000, guid: 19feff3c5f4b8e74badb86579ec5c15b, type: 3}
+    imageShip: {fileID: 21300000, guid: 576db77bd0fa6d44bb7d579fa9be88eb, type: 3}
+    health: 15
+    damageCastle: 5
+    speedMovement: 2
+    leftBorderReward: 20
+    rightBorderReward: 25
+  delaySpawnEnemy: 1.5
+  towers:
+  - speedBullet: 7
+    backgroundImage: {fileID: 21300000, guid: b58eadcdbba79cb4483f8ca779815602, type: 3}
+    damage: 2
+    delayShot: 0.75
+    radius: 3
+    cost: 10
+  - speedBullet: 7
+    backgroundImage: {fileID: 21300000, guid: 7a1e25458e0691b458e6b5effac5e56b, type: 3}
+    damage: 5
+    delayShot: 0.75
+    radius: 5
+    cost: 40
+  - speedBullet: 7.5
+    backgroundImage: {fileID: 21300000, guid: 753bd47857cd64846b5287879f17803c, type: 3}
+    damage: 10
+    delayShot: 0.75
+    radius: 4
+    cost: 100
+  - speedBullet: 10
+    backgroundImage: {fileID: 21300000, guid: f9312f1028a0cac418e74e482283f095, type: 3}
+    damage: 10
+    delayShot: 0.5
+    radius: 5
+    cost: 200
+  waves:
+  - enemys: 01000000
+    time: 30
+  - enemys: 01010000
+    time: 60
+  - enemys: 01010100
+    time: 90
+  - enemys: 00000101
+    time: 120
