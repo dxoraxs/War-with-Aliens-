@@ -75,7 +75,7 @@ public class TowerController : MonoBehaviour,
 
     private void Awake()
     {
-        cellManager = transform.parent.GetComponent<TowerCellManager>();
+        cellManager = transform.GetComponentInParent<TowerCellManager>();
     }
 
     private void OnDrawGizmos()

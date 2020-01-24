@@ -27,7 +27,6 @@ public class Bullet : MonoBehaviour
         else if (speed != 0 && target == null)
         {
             Destroy(gameObject);
-        }
-        
+        }        
     }
 }

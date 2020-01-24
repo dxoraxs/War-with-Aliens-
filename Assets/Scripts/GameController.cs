@@ -33,8 +33,7 @@ public class GameController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var enemy = collision.GetComponentInParent<EnemyController>();
-        if (enemy)
+        if (collision.TryGetComponent<EnemyController>(out EnemyController enemy))
         {
             Destroy(collision.transform.parent.gameObject);
             TakeDamage(enemy.GetDamageCastle);
